@@ -13,20 +13,96 @@ This project is part of my DSA Data Analysis Capstone. It focuses on analyzing A
 
 ## 🧾 Business Questions Answered
 
-1. What is the average discount percentage by product category?  
-2. How many products are listed under each category?  
-3. What is the total number of reviews per category?  
-4. Which products have the highest average ratings?  
-5. What is the average actual price vs discounted price by category?  
-6. Which products have the highest number of reviews?  
-7. How many products have a discount of 50% or more?  
-8. What is the distribution of product ratings?  
-9. What is the total potential revenue (actual_price × rating_count) by category?  
-10. What is the number of unique products per price range bucket?  
-11. What is the relationship between rating and discount percentage?  
-12. How many products have fewer than 1,000 reviews?  
-13. Which categories have products with the highest discounts?  
-14. Identify the top 5 products based on rating and number of reviews combined.
+### 1. What is the average discount percentage by product category?
+To understand which product categories offer the most value to customers, I calculated the average discount percentage by category. Using a pivot table, I placed category in the row section and discount_percentage in the values section (set to average). This showed me which categories consistently offer higher discounts. A column chart helped visualize this clearly, highlighting categories like electronics and fashion as the most discounted.
+
+---
+
+### 2. How many products are listed under each category?
+This question aims to show the breadth of products offered per category. I used a pivot table with category in rows and product_id in values (set to count). This gave me a simple but powerful snapshot of product variety across categories. For instance, some categories had hundreds of listings, while others were more niche. A bar chart was used to communicate this distribution visually.
+
+---
+
+### 3. What is the total number of reviews per category? 
+To understand customer engagement per category, I analyzed the total number of reviews. rating_count is a direct indicator of how many customers interacted with a product, so I summed it up per category using a pivot table. This showed which categories attracted the most customer feedback. A bar chart helped visualize the top-performing categories in terms of review volume.
+
+### 4. Which products have the highest average ratings?  
+Customer satisfaction is key, so I focused on identifying top-rated products. I used a pivot table where product_name was placed in rows and rating in values (set to average). I then sorted the pivot table in descending order to reveal the highest-rated products. This helped spotlight standout items, some of which had 4.9 to 5.0 ratings — a sign of consistent quality.
+
+---
+
+### 5. What is the average actual price vs discounted price by category?  
+This comparison helps understand pricing strategies across categories. I created a pivot table with category in rows, then added both actual_price and discounted_price in the values section (set to average). A clustered column chart made the comparison easy to grasp. It was interesting to see how deeply certain categories are discounted, and which ones hold their value more.
+
+---
+
+### 6. Which products have the highest number of reviews?  
+This metric reflects product popularity or marketing success. I created a pivot table with product_name in rows and rating_count in values (set to sum). Sorting by review count in descending order gave a clear view of the most-reviewed products. These are often bestsellers or highly visible items. A horizontal bar chart was used to showcase the top performers.
+
+---
+
+### 7. How many products have a discount of 50% or more?  
+To identify deep deals, I used a simple formula:
+=COUNTIF(discount_percentage, ">=50")  
+This gave me the number of products with at least 50% off. This figure is useful for understanding the intensity of discounting on the platform. I presented it as a KPI card on the dashboard for quick visibility.
+
+---
+
+### 8. What is the distribution of product ratings?
+
+This analysis shows how well products are generally rated. I used a pivot table with `rating` in rows and counted how many products fall under each rating. A column chart helped illustrate the spread. Most products cluster around 4.0 to 4.5, showing that sellers are doing well in maintaining customer satisfaction.
+
+---
+
+### 9. What is the total potential revenue by category?
+
+To estimate how much money each category could generate, I created a new column:  
+excel
+potential_revenue = actual_price × rating_count  
+Then I built a pivot table with `category` in rows and `potential_revenue` in values (sum). This showed which categories could drive the most revenue based on interest and price. A bar chart visualized the potential cash flow by segment.
+
+---
+
+### 10. What is the number of unique products per price range bucket?
+
+I created a new column to bucket products:
+excel
+=IF(actual_price<200,"<₹200",IF(actual_price<=500,"₹200–₹500",">₹500"))
+Then I used a pivot table to count the number of products in each price range. This helped identify how pricing is distributed across the catalog. I used a pie chart to represent the product spread by pricing tier.
+
+---
+
+### 11. What is the relationship between rating and discount percentage?**
+
+To explore this relationship, I used a scatter plot with `discount_percentage` on the x-axis and `rating` on the y-axis. I added a trendline with an R² value of **0.0186**. The trendline was nearly horizontal, suggesting that there is **no meaningful relationship** between discount and rating. This insight shows that customers don’t rate products based on discount alone — they focus more on product quality.
+
+---
+
+### 12. How many products have fewer than 1,000 reviews?
+
+This analysis helps highlight low-engagement products. I used a formula:  
+excel
+=COUNTIF(rating_count, "<1000") 
+This gave the count of products with under 1,000 reviews — useful for identifying products that might need more marketing or exposure. I also visualized this as a big number card for easy reference on the dashboard.
+
+---
+
+### **13. Which categories have products with the highest discounts?**
+
+To answer this, I used a pivot table with `category` in rows and `discount_percentage` in values (set to **Max**, not average or sum). This highlighted which category had the **single most discounted product**, giving a more accurate picture of deep deals. It’s useful for spotting aggressive pricing strategies by category.
+
+---
+
+### 14. Identify the top 5 products in terms of rating and number of reviews combined.
+
+Here I created a **custom score** using:
+excel
+=rating + (rating_count / 1000)
+This formula balances quality (rating) and popularity (review count). I used a helper column for this and sorted the data to find the top 5 products. These represent the best of both worlds: high-quality and high-volume — perfect for identifying flagship products.
+
+---
+
+
 
 ## 💡 Key Insights
 
