@@ -8,7 +8,7 @@ This project is part of my DSA Data Analysis Capstone. It focuses on analyzing A
 ## Project Summary
 
 -  **Dataset Size:** 1,465 products × 16 columns
-- 🛠**Tools Used:** Excel (Pivot Tables, Calculated Columns, Dashboard Design)
+- **Tools Used:** Excel (Pivot Tables, Calculated Columns, Dashboard Design)
 - **Goal:** Use Excel to analyze trends in ratings, pricing, reviews, and discounts — and build a clean, interactive dashboard.
 
 ## Business Questions Answered
@@ -104,7 +104,7 @@ This formula balances quality (rating) and popularity (review count). I used a h
 
 
 
-## 💡 Key Insights
+## Key Insights
 
 | Metric                     | Value Example       |
 |----------------------------|---------------------|
@@ -118,46 +118,46 @@ This formula balances quality (rating) and popularity (review count). I used a h
 
 
 
-## 📸 Dashboard & Visuals
+## Dashboard & Visuals
 
-### 🧩 Final Dashboard Preview
+### Final Dashboard Preview
 
 ![](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/Amazon%20Dashboard.png)
 
 
 
-### 🎯 KPI Cards
+### KPI Cards
 
 ![](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/KPI%20cards.png)
 
 
 
-### 📈 Rating Distribution
+### Rating Distribution
 
 ![](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/10.%20Price%20Range%20Distribution.png)
 
 
-### 🛍️ Discount % by Category
+### Discount % by Category
 
 ![Discount Chart](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/1.%20Average%20Discount%20by%20Category.png)
 
 
-### 🧊 Price Range Distribution
+### Price Range Distribution
 
 ![](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/10.%20Price%20Range%20Distribution.png)
 
-### 🏆 Top 5 Products by Combined Score
+### Top 5 Products by Combined Score
 
 ![Top Products](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/14.%20Top%205%20Products.png)
 
 
 
-### 📉 Rating vs Discount Scatter Plot
+### Rating vs Discount Scatter Plot
 
 ![Scatter Plot](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/11.%20Rating%20Vs%20Discount%20Scatter%20Plot.png)
 
 **R² = 0.0186**  
-➡️ No significant relationship between discount and rating. Customers rate products independently of pricing strategy.
+No significant relationship between discount and rating. Customers rate products independently of pricing strategy.
 
 ---
 
@@ -182,7 +182,7 @@ This formula balances quality (rating) and popularity (review count). I used a h
 - Translating raw data into compelling visuals and narratives for stakeholders
 
 
-## 🚀 About This Project
+## About This Project
 
 This case study was part of my final project for the **DSA Data Analysis Program**. It demonstrates my ability to:
 - Clean and analyze real-world datasets
