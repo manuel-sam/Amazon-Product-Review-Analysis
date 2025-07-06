@@ -1,15 +1,15 @@
 # Amazon-Product-Review-Analysis
 Exploratory data analysis of Amazon product review data using Excel. Includes dashboards and insights on ratings, reviews, discounts, and revenue.
 
-# 🛒 Amazon Product Review Analysis
+# Amazon Product Review Analysis
 
 This project is part of my DSA Data Analysis Capstone. It focuses on analyzing Amazon product review data to uncover insights that help inform pricing, product strategy, and customer satisfaction.
 
-## 📊 Project Summary
+## Project Summary
 
-- 📂 **Dataset Size:** 1,465 products × 16 columns
-- 🛠️ **Tools Used:** Excel (Pivot Tables, Calculated Columns, Dashboard Design)
-- 🎯 **Goal:** Use Excel to analyze trends in ratings, pricing, reviews, and discounts — and build a clean, interactive dashboard.
+-  **Dataset Size:** 1,465 products × 16 columns
+- 🛠**Tools Used:** Excel (Pivot Tables, Calculated Columns, Dashboard Design)
+- **Goal:** Use Excel to analyze trends in ratings, pricing, reviews, and discounts — and build a clean, interactive dashboard.
 
 ## 🧾 Business Questions Answered
 
@@ -122,20 +122,19 @@ This formula balances quality (rating) and popularity (review count). I used a h
 
 ### 🧩 Final Dashboard Preview
 
-![Dashboard](./analysis/dashboard_screenshot.png)
+![](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/Amazon%20Dashboard.png)
 
 ---
 
 ### 🎯 KPI Cards
 
-![KPI Cards](./visuals/cards_preview.png)
+![](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/KPI%20cards.png)
 
 ---
 
 ### 📈 Rating Distribution
 
-![Rating Chart](./visuals/rating_distribution.png)
-
+![Rating Chart](
 ---
 
 ### 🛍️ Discount % by Category
@@ -146,13 +145,11 @@ This formula balances quality (rating) and popularity (review count). I used a h
 
 ### 🧊 Price Range Distribution
 
-![Price Bucket](./visuals/price_range_distribution.png)
-
----
+![](
 
 ### 🏆 Top 5 Products by Combined Score
 
-![Top Products](./visuals/top_5_products.png)
+![Top Products](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/14.%20Top%205%20Products.png)
 
 ---
 
