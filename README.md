@@ -11,7 +11,7 @@ This project is part of my DSA Data Analysis Capstone. It focuses on analyzing A
 - 🛠**Tools Used:** Excel (Pivot Tables, Calculated Columns, Dashboard Design)
 - **Goal:** Use Excel to analyze trends in ratings, pricing, reviews, and discounts — and build a clean, interactive dashboard.
 
-## 🧾 Business Questions Answered
+## Business Questions Answered
 
 ### 1. What is the average discount percentage by product category?
 To understand which product categories offer the most value to customers, I calculated the average discount percentage by category. Using a pivot table, I placed category in the row section and discount_percentage in the values section (set to average). This showed me which categories consistently offer higher discounts. A column chart helped visualize this clearly, highlighting categories like electronics and fashion as the most discounted.
@@ -116,7 +116,7 @@ This formula balances quality (rating) and popularity (review count). I used a h
 | Average Discount Price     | 3,296 |
 | Average Discount Percent    | 47% |
 
----
+
 
 ## 📸 Dashboard & Visuals
 
@@ -124,45 +124,44 @@ This formula balances quality (rating) and popularity (review count). I used a h
 
 ![](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/Amazon%20Dashboard.png)
 
----
+
 
 ### 🎯 KPI Cards
 
 ![](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/KPI%20cards.png)
 
----
+
 
 ### 📈 Rating Distribution
 
-![Rating Chart](
----
+![](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/10.%20Price%20Range%20Distribution.png)
+
 
 ### 🛍️ Discount % by Category
 
-![Discount Chart](./visuals/discount_by_category.png)
+![Discount Chart](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/1.%20Average%20Discount%20by%20Category.png)
 
----
 
 ### 🧊 Price Range Distribution
 
-![](
+![](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/10.%20Price%20Range%20Distribution.png)
 
 ### 🏆 Top 5 Products by Combined Score
 
 ![Top Products](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/14.%20Top%205%20Products.png)
 
----
+
 
 ### 📉 Rating vs Discount Scatter Plot
 
-![Scatter Plot](./visuals/scatter_rating_vs_discount.png)
+![Scatter Plot](https://github.com/manuel-sam/Amazon-Product-Review-Analysis/blob/main/11.%20Rating%20Vs%20Discount%20Scatter%20Plot.png)
 
 **R² = 0.0186**  
 ➡️ No significant relationship between discount and rating. Customers rate products independently of pricing strategy.
 
 ---
 
-## 📂 Files Included
+##  Files Included
 
 | File | Description |
 |------|-------------|
@@ -175,22 +174,18 @@ This formula balances quality (rating) and popularity (review count). I used a h
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 - Creating interactive dashboards using Pivot Tables & Slicers
 - How to extract and communicate business insights from product-level data
 - Designing a professional Excel layout (dark mode, KPI cards, charts)
 - Translating raw data into compelling visuals and narratives for stakeholders
 
----
 
 ## 🚀 About This Project
 
-This case study was part of my final capstone for the **DSA Data Analysis Program**. It demonstrates my ability to:
+This case study was part of my final project for the **DSA Data Analysis Program**. It demonstrates my ability to:
 - Clean and analyze real-world datasets
 - Visualize data clearly for decision-making
 - Use Excel to answer business questions with confidence
 
----
-
-**🔗 Connect with me on [LinkedIn](#) to view more projects!**
